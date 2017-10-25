@@ -8,41 +8,55 @@
 	<p><b>Nested Ordered:</b> Conveys the items but no mention of a list on "things Rick would never do."</p>
 	<p><b>Ordered (disc outside none):</b> Conveys "list start" and "list end".  Conveys "bullet" at the start of each list item.  Nothing more mentioned about a list.</p>
 	<p><b>Unordered (outside none):</b> Conveys "list start" and "list end".  Conveys "#" at the start of each list item.  Nothing more mentioned about a list.</p>
-	<p><b>Unordered (upper-roman outside none):</b> Conveys "list start" and "list end".  Conveys "Cap I" for Roman Numeral 1. "2" and "3" for Roman number II and III.  All others are read as "V Eye", V Eye Eye" etc. Nothing more mentioned about a list.</p>
+	<p><b>Unordered (upper-roman outside none):</b> Conveys "list start" and "list end". Conveys "Cap I" for Roman Numeral 1. "eye eye" for Roman Number II, "3" and "4" for Roman number III and IV. All others are read as "V Eye", V Eye Eye" etc. Nothing more mentioned about a list.</p>
 </td>
 <td>
 	<p><b>Nested Ordered:</b> Conveys the items but no mention of a list on "things Rick would never do."</p>
 	<p><b>Ordered (disc outside none):</b> "List 7 Items"  Also announces "Bullet, accessible name 1 of 7" and "end of list."</p>
 	<p><b>Unordered (outside none):</b> "List 3 Items" "1 accessible name, 1 of 3," etc. and "End of List."</p>
-	<p><b>Unordered (upper-roman outside none):</b> "List 9 Items" "eye accessible name, 1 of 9" "eye eye accessible name 2 of 9" "3 accessible name 3 of 9"  Each read the letter instead of the numeral, except for III and IV, which read "3" and "4" respectively.</p>
+	<p><b>Unordered (upper-roman outside none):</b> "List 9 Items" "eye accessible name, 1 of 9" "two accessible name 2 of 9" "3 accessible name 3 of 9" Each read the letter instead of the numeral. except for II and III. Those read "2" and "3" respectively. </p>
 </td>
 <td>
-	<p><b>Nested Ordered:</b> Works fine, even things Rick would never do is read as a list of 8 items.</p>
+	<p><b>Nested Ordered:</b> "List 7 Items" "accessbile name 1 of 7" sub-list is mentioned, and "end of list", no list type mentioned</p>
+	<p><b>Ordered (disc outside none):</b> "List 7 Items" Also announces "Bullet, accessible name 1 of 7" and "end of list"</p>
+	<p><b>Unordered (outside none):</b> "List 3 Items" "1 accessible name, 1 of 3" etc and "End of List".</p>
+	<p><b>Unordered (upper-roman outside none):</b> "List 9 Items" "eye accessible name, 1 of 9" "eye eye accessible name 2 of 9" "eye eye eye accessible name 3 of 9" , etc. Each read the letters instead of the numeral. </p>
+</td>
+<td>
+	<p><b>Nested Ordered:</b> Exposes both lists with number of items</p>
+	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items"; announces "bullet" before each item.</p>
+	<p><b>Unordered (outside none):</b> Exposed as "list with 3 items"; announces number before each item.</p>
+	<p><b>Unordered (upper-roman outside none):</b> "List item x of 9, x" (it reads the numeral twice. Correctly interprets roman numerals except for I and V).</p>
+</td>
+<td>
+	<p><b>Nested Ordered:</b> Exposes both lists with number of items</p>
 	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items"; announces "bullet" before each item.</p>
 	<p><b>Unordered (outside none):</b> Exposed as "list with 3 items"; announces number before each item.</p>
 	<p><b>Unordered (upper-roman outside none):</b> Exposed as "list with 9 items"; reads the roman numerals as numbers except "I" and "V" which it reads as "eye" and "vee."</p>
 </td>
 <td>
-	<p><b>Nested Ordered:</b> Works fine, even things Rick would never do is read as a list of 8 items.</p>
-	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items" using the disc.</p>
-	<p><b>Unordered (outside none):</b> Exposed as a 3-item unordered list (&lt;ul&gt;).</p>
-	<p><b>Unordered (upper-roman outside none):</b> Exposed as a 9-item unordered list (&lt;ul&gt;); reads roman numerals as numbers.</p>
+	<p><b>Nested Ordered:</b> Exposes both lists with number of items</p>
+	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items"; announces "bullet" before each item.</p>
+	<p><b>Unordered (outside none):</b> exposed as a 3-item unordered list (&lt;ul&gt;).</p>
+	<p><b>Unordered (upper-roman outside none):</b> exposed as a 9-item unordered list (&lt;ul&gt;); reads roman numerals as numbers.</p>
 </td>
 <td>
-	<p><b>Nested Ordered:</b> Works fine, even things Rick would never do is read as a list of 8 items.</p>
-	<p><b>Ordered (disc outside none):</b> Exposed as an unordered list of 7 items (same as a &lt;ul&gt;).</p>
-	<p><b>Unordered (outside none):</b> Exposed as a 3-item ordered list (&lt;ol&gt;).</p>
-	<p><b>Unordered (upper-roman outside none):</b> Exposed as a 9-item ordered list (&lt;ol&gt;); reads numerals as numbers.</p>
+	<p><b>Nested Ordered:</b> Exposed as a list and a sub-list (nested). No list-type of any kind is conveyed (including "bullet")</p>
+	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items"; announces "bullet" before each item.</p>
+	<p><b>Unordered (outside none):</b> Exposed as "list with 3 items"; announces number before each item.</p>
+	<p><b>Unordered (upper-roman outside none):</b> Exposed as "list with 9 items"; reads the roman numerals as numbers, no mention of Roman Numerals.</p>
+</td>
+
+
+<td>
+	<p><b>Nested Ordered:</b> Exposed as a list and a sub-list (nested). No list-type of any kind is conveyed (including "bullet")</p>
+	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items"; announces "bullet" before each item.</p>
+	<p><b>Unordered (outside none):</b> Exposed as "list with 3 items"; announces number before each item.</p>
+	<p><b>Unordered (upper-roman outside none):</b> "List 9 Items" "eye accessible name," "two accessible name" "3 accessible name" Each read the letter instead of the numeral. except for II and III. Those read "2" and "3" respectively. Also, VI reads as veye and VII reads as vee and IX reads as icks.</p>
 </td>
 <td>
-	<p><b>Nested Ordered:</b> Works fine, even things Rick would never do is read as a list of 8 items.</p>
-	<p><b>Ordered (disc outside none):</b> Exposed as an unordered list of 7 items (same as a &lt;ul&gt;).</p>
-	<p><b>Unordered (outside none):</b> Exposed as a 3-item ordered list (&lt;ol&gt;).</p>
-	<p><b>Unordered (upper-roman outside none):</b> Exposed, but reads roman numerals as if they were letters; e.g. "eye vee" instead of "four," etc.</p>
-</td>
-<td>
-	<p><b>Nested Ordered:</b> Works fine, even things Rick would never do is read as a list of 8 items.</p>
-	<p><b>Ordered (disc outside none):</b> Exposed as an unordered list of 7 items (same as a &lt;ul&gt;).</p>
-	<p><b>Unordered (outside none):</b> Exposed as a 3-item unordered list (&lt;ul&gt;).</p>
-	<p><b>Unordered (upper-roman outside none):</b> Exposed as a 9-item unordered list (&lt;ul&gt;).</p>
-</td>		
+	<p><b>Nested Ordered:</b> Exposed as a list and a sub-list (nested). No list-type of any kind is conveyed (including "bullet")</p>
+	<p><b>Ordered (disc outside none):</b> Exposed as "list with 7 items"; announces "bullet" before each item.</p>
+	<p><b>Unordered (outside none):</b> exposed as a 3-item list; reads "bullet". No mention of numbers.</p>
+	<p><b>Unordered (upper-roman outside none):</b> exposed as a 9-item list; reads "bullet".  No mention of Roman Numerals.</p>
+</td>	
