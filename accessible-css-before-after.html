@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Before and After</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+		<style>
+			span::before {
+				content: 'Mary had a little lamb.';
+			}
+			span::after {
+				content: 'And everywhere that Mary went,';
+			}
+			.gold::after {
+				content: 'Gold Plan';
+			}
+			.diamond::after {
+				content: 'Diamond Plan';
+			}
+		</style>
+	</head>
+	<body>
+		<h1><code>::before </code>and<code> ::after</code></h1>
+		<p>
+			<span>
+				Its fleece was white as snow.
+			</span>
+			the lamb was sure to go.
+		</p>
+        <h2>Used with active elements (links, buttons)</h2>
+        <p>Note: Both links below go to Google and are for testing purposes only. Both buttons below have no functionality and for testing purposes only.</p>
+        <p>
+            <a href="https://www.google.com" class="gold">Select </a>
+        </p>
+        <p>
+            <a href="https://www.google.com" class="diamond">Select </a>
+        </p>
+        <p>
+            <button class="gold">Select </button>
+        </p>
+        <p>
+            <button class="diamond">Select </button>
+        </p>
+	</body>
+</html>

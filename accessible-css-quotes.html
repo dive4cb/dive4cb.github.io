@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quotes</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+    <style>
+        .dq {
+            quotes: "\0022" "\0022";
+        }
+        
+        .sq {
+            quotes: "\0027" "\0027";
+        }
+        
+        .slaq {
+            quotes: "\2039" "\2039";
+        }
+        
+        .sraq {
+            quotes: "\203A" "\203A";
+        }
+        
+        .dlaq {
+            quotes: "\00AB" "\00AB";
+        }
+        
+        .draq {
+            quotes: "\00BB" "\00BB";
+        }
+        
+        .lsh6q {
+            quotes: "\2018" "\2018";
+        }
+        
+        .rsh9q {
+            quotes: "\2019" "\2019";
+        }
+        
+        .ldh6q {
+            quotes: "\201C" "\201C";
+        }
+        
+        .rdh9q {
+            quotes: "\201D" "\201D";
+        }
+        
+        .ddl9q {
+            quotes: "\201E" "\201E";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>quotes</h1>
+    <div>
+        This is some text.
+    </div>
+    <div>
+        This is some text.
+    </div>
+    <div><q class="dq">
+            This is some text within q tags with double quotes.
+        </q>
+    </div>
+    <div><q class="sq">
+            This is some text within q tags with single quotes.
+        </q>
+    </div>
+    <div><q class="slaq">
+            This is some text within q tags with single left angle quotes.
+        </q>
+    </div>
+    <div><q class="sraq">
+            This is some text within q tags with single right angle quotes.
+        </q>
+    </div>
+    <div><q class="dlaq">
+            This is some text within q tags with double left angle quotes.
+        </q>
+    </div>
+    <div><q class="draq">
+            This is some text within q tags with double right angle quotes.
+        </q>
+    </div>
+    <div><q class="lsh6q">
+            This is some text within q tags with left (single high-6) quotes.
+        </q>
+    </div>
+    <div><q class="rsh9q">
+            This is some text within q tags with right (single high-9) quotes.
+        </q>
+    </div>
+    <div><q class="ldh6q">
+            This is some text within q tags with left (double high-6) quotes.
+        </q>
+    </div>
+    <div><q class="rdh9q">
+            This is some text within q tags with right (double high-9) quotes.
+        </q>
+    </div>
+    <div><q class="ddl9q">
+            This is some text within q tags with double (double low-9) quotes.
+        </q>
+    </div>
+    <div>
+        This is some text.
+    </div>
+    <div>
+        This is some text.
+    </div>
+</body>
+
+</html>

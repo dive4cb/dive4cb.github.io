@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Direction and Unicode-Bidi</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+	</head>
+	<body>
+		<h1>Direction and Unicode-Bidi</h1>
+		<h2>Paragraphs within a<code> &lt;div&gt; </code>having<code> direction: rtl;</code></h2>
+		<div style="direction: rtl;">
+			<p>Nothing so needs reforming as other people’s habits.</p>
+			<p>Fanatics will never learn that, though it be written in letters of gold across the sky.</p>
+			<p>It is the prohibition that makes anything precious.</p>
+			<p>– Mark Twain</p>
+		</div>
+		<h2>Text within a<code> &lt;div&gt; </code>having<code> direction: rtl;</code></h2>
+		<div style="direction: rtl;">
+			Nothing so needs reforming as other people’s habits.<br>
+			Fanatics will never learn that, though it be written in letters of gold across the sky.<br>
+			It is the prohibition that makes anything precious.<br>
+			– Mark Twain
+		</div>
+		<h2>Text within a<code> &lt;div&gt; </code>having<code> direction: rtl; </code>and<code> unicode-bidi: bidi-override;</code></h2>
+		<div style="direction: rtl; unicode-bidi: bidi-override;">
+			Your mind is totally controlled.<br>
+			It has been stuffed into my mold.<br>
+			And you will do as you are told,<br>
+			Until the rights to you are sold.<br>
+			– Frank Zappa
+		</div>
+	</body>
+</html>

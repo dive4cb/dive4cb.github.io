@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Transition</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+	</head>
+	<style>
+		p {
+			transition: all 3s;
+		}
+		p:focus, p:hover {
+			opacity: 0;
+			visibility: hidden;
+		}
+	</style>
+	<body>
+		<h1>Transition</h1>
+		<h2><code>transition: all 3s;</code></h2>
+		<p tabindex="0">
+			I am printed with disappearing ink. Focus or hover on me and I will transition to<code> opacity: 0; visibility: hidden;</code>
+		</p>
+		<p tabindex="0">
+			I am printed with disappearing ink. Focus or hover on me and I will transition to<code> opacity: 0; visibility: hidden;</code>
+		</p>
+		<p tabindex="0">
+			I am printed with disappearing ink. Focus or hover on me and I will transition to<code> opacity: 0; visibility: hidden;</code>
+		</p>
+		<p tabindex="0">
+			I am printed with disappearing ink. Focus or hover on me and I will transition to<code> opacity: 0; visibility: hidden;</code>
+		</p>
+		<p tabindex="0">
+			I am printed with disappearing ink. Focus or hover on me and I will transition to<code> opacity: 0; visibility: hidden;</code>
+		</p>
+	</body>
+	</html>

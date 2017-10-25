@@ -1,0 +1,45 @@
+#dialog-trigger{
+	background: #3F3;
+	border: 2px solid #777;
+	border-radius: 1em;
+	padding: 0.25em 1em;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+}
+#dialog {
+	background-color: #FFF;
+	border: 5px solid #CCC;
+	border-radius: 1em;
+	box-shadow: 0 0 100px #CCC;
+	display: none;
+	font-family: sans-serif;
+	left: 10%;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	top: 70px;
+	width: 80%;
+	z-index: 15;
+}
+#dialog-head {
+	margin: 0;
+	padding: 0.5em;
+	background-color: #CCC;
+}
+#dialog-body {
+	border: 1px solid #777;
+	border-collapse: collapse;
+}
+#dialog th, #dialog td {
+	border: 1px solid #777;
+	padding: 0.5em;
+	width: 12.5%;
+	vertical-align: top;
+}
+#dialog th img {
+	width: 50%;
+}
+#close {
+	margin: 1em;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Counter</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+		<style>
+			body {
+					counter-reset: section;
+			}
+			h2 {
+					counter-reset: subsection;
+			}
+			h2::before {
+					counter-increment: section;
+					content: "Section " counter(section) ". ";
+			}
+			h3::before {
+					counter-increment: subsection;
+					content: counter(section) "." counter(subsection) " ";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Counter</h1>
+		
+		<h2>HTML tutorials:</h2>
+		<h3>HTML Tutorial</h3>
+		<h3>CSS Tutorial</h3>
+
+		<h2>Scripting tutorials:</h2>
+		<h3>JavaScript</h3>
+		<h3>VBScript</h3>
+
+		<h2>XML tutorials:</h2>
+		<h3>XML</h3>
+		<h3>XSL</h3>
+		
+	</body>
+</html>

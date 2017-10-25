@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Text-Overflow</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+	</head>
+	<style>
+		p {
+			border: 1px solid #00F;
+			overflow: hidden;
+			white-space: nowrap;
+			width: 50%;
+		}
+	</style>
+	<body>
+		<h1>Text-Overflow</h1>
+		<h2><code>text-overflow: ellipsis;</code></h2>
+		<p style="text-overflow: ellipsis;">
+			The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.
+		</p>
+		<h2><code>text-overflow: clip;</code></h2>
+		<p style="text-overflow: clip;">
+			The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.
+		</p>
+	</body>
+	</html>

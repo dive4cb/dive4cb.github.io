@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clip</title>
+		<script src="jquery.min.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+	</head>
+	<style>
+		div {
+			float: left;
+			margin-right: 150px;
+		}
+		div div {
+			background: #6F6; 
+			position: absolute;
+			width: 150px;
+		}
+	</style>
+	<body>
+		<h1>Clip</h1>
+		<div>
+			<h2><code>&lt;div&gt; </code>with no<code> clip</code></h2>
+			<div>It's Supercalifragilisticexpialidocious! Even though the sound of it is something quite atrocious. If you say it loud enough you'll always sound precocious: Supercalifragilisticexpialidocious!</div>
+		</div>
+		<div>
+			<h2><code>&lt;div&gt; </code>with <code> clip: rect(0px, 50px, 170px, 0px);</code></h2>
+            <div style="clip: rect(0px, 50px, 170px, 0px);">It's Supercalifragilisticexpialidocious! Even though the sound of it is something quite atrocious. If you say it loud enough you'll always sound precocious: Supercalifragilisticexpialidocious!</div>
+		</div>
+		<div>
+			<h2><code>&lt;div&gt; </code>with <code> clip: rect(0px, 0px, 0px, 0px);</code></h2>
+            <div style="clip: rect(0px, 0px, 0px, 0px);">It's Supercalifragilisticexpialidocious! Even though the sound of it is something quite atrocious. If you say it loud enough you'll always sound precocious: Supercalifragilisticexpialidocious!</div>
+		</div>
+	</body>
+</html>

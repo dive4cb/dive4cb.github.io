@@ -1,7 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test Cases - AccessU 2017</title>
+    <link rel="stylesheet" href="accessible-css.css">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="contents.html" target="demo">css test cases</a>
+				<a href="combinations-used.html" target="demo">AT/browser combinations tested</a>
+    </nav>
+    <div id="alertmessage" aria-live="polite"></div>
+    <iframe id="demo" name="demo" title="demo" src="title.html"></iframe>
+    <footer>
+        <hr />
+        <a href="http://www.deque.com"><img src="deque.png" alt="D Q logo"></a>
+        <a href="http://webaim.org"><img src="webaim.png" alt="Web Aim - web accessibility in mind logo"></a>
+    </footer>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('iframe').load(function () {
+                var frametitle = $(this).contents().find('title').text();
+                $('title').text(frametitle + ' - CSS Test Cases - AccessU 2017');
+                $('#alertmessage').text('document ' + frametitle + ' i frame loaded');
+            });
+        });
+    </script>
 </body>
+
 </html>
