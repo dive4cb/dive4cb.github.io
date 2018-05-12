@@ -71,13 +71,12 @@ footer img {
 
 .title-card div img:last-of-type {
     margin: 1em auto;
-    width: 50%;
     display: block;
 }
 
 .title-card div img:first-of-type {
     margin: 1em auto;
-    width: 75%;
+    height: 50px;
 }
 
 #alertmessage {
