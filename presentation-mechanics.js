@@ -1,5 +1,5 @@
 $(function() {
-	$('body').append('<div id="dialog" role="alertdialog" tabindex="-1" aria-labelledby="dialog-head" aria-describedby="dialog-body" /><button type="button" id="dialog-trigger">Results</button>');
+	$('body').append('<div id="dialog" role="alertdialog" tabindex="-1" aria-labelledby="dialog-head" aria-describedby="dialog-body" /><button type="button" id="dialog-trigger">Results</button> <a href="javascript:window.open(\'view-source:\'+location.href)">View Source</a>');
 	$('#dialog').load('dialog.html', function() {
     var url = window.location.pathname;
 		$('tbody').load(url.substring(url.lastIndexOf('/') + 1, url.length - 5) + '-result.html');
