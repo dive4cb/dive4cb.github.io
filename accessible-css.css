@@ -5,23 +5,21 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.col2 {
+	column-count: 2;
+}
 body > ul > li {
     margin-top: 1em;
 }
-
 a {
     color: #FF0;
 }
-
 nav {
     margin: 2% 10%;
 }
-
 nav a {
     margin-right: 1em;
 }
-
 iframe {
     background: #FFF;
     border: 0;
@@ -31,7 +29,6 @@ iframe {
     position: absolute;
     width: 80%;
 }
-
 footer {
     bottom: 2%;
     height: 8%;
@@ -40,45 +37,36 @@ footer {
     text-align: right;
     width: 80%;
 }
-
 footer img {
     height: 95%;
     margin-left: 4%;
 }
-
 .title-card {
     text-align: center;
 }
-
 .title-card h1 {
     font-size: 5em;
 }
-
 .title-card span {
     display: block;
     font-size: 0.75em;
     margin-top: 0.5em;
 }
-
 .title-card h2 {
     font-size: 2em;
 }
-
 .title-card div {
     display: inline-block;
     width: 24%;
 }
-
 .title-card div img:last-of-type {
     margin: 1em auto;
     display: block;
 }
-
 .title-card div img:first-of-type {
     margin: 1em auto;
     height: 50px;
 }
-
 #alertmessage {
     position: absolute !important;
     height: 1px;
@@ -88,15 +76,12 @@ footer img {
     /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
 }
-
 hr {
     display: none;
 }
-
 :focus {
     outline: 3px solid #f1ca00;
 }
-
 @media only screen and (max-width: 610px) {
     .title-card h1 {
         font-size: 2em;
