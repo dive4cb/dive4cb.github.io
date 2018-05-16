@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Test Cases - AHG 2017</title>
+    <title>CSS Test Cases</title>
     <link rel="stylesheet" href="accessible-css.css">
 </head>
 
@@ -26,7 +26,7 @@
         $(function () {
             $('iframe').load(function () {
                 var frametitle = $(this).contents().find('title').text();
-                $('title').text(frametitle + ' - CSS Test Cases - AHG 2017');
+                $('title').text(frametitle + ' - CSS Test Cases');
                 $('#alertmessage').text('document ' + frametitle + ' i frame loaded');
             });
         });
