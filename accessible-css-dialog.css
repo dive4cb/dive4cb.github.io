@@ -57,7 +57,7 @@
 }
 
 /* View Source https://css-tricks.com/examples/ViewSourceButton/  */
-#source-code { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; }
+#source-code { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); }
 #source-code:target { display: block; }
 #source-code pre { padding: 20px; font: 14px/1.6 Monaco, Courier, MonoSpace; margin: 50px auto; background: #000; color: white; width: 80%; height: 80%; overflow: auto; }
 #source-code pre a, #source-code pre a span { text-decoration: none; color: #00ccff !important; }
