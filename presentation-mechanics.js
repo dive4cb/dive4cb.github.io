@@ -1,5 +1,5 @@
 $(function() {
-	$('body').append('<div id="dialog" role="alertdialog" tabindex="-1" aria-labelledby="dialog-head" aria-describedby="dialog-body" /><button type="button" id="dialog-trigger">Results</button> <a href="javascript:window.open(\'view-source:\'+location.href)">View Source</a>');
+	$('body').append('<div id="dialog" role="alertdialog" tabindex="-1" aria-labelledby="dialog-head" aria-describedby="dialog-body" /><div class="button-container"><a href="#source-code" id="view-source">Source</a> <button id="dialog-trigger">Results</button></div><div id="source-code"><a href="#" id="x" aria-label="close">&times;</a></div>');
 	$('#dialog').load('dialog.html', function() {
     var url = window.location.pathname;
 		$('tbody').load(url.substring(url.lastIndexOf('/') + 1, url.length - 5) + '-result.html');
@@ -15,7 +15,7 @@ $(function() {
 		$('#dialog').on('keydown', function (e) {
 			if (e.which === 27) {
 				$('#close').click();
-			} else if (e.which === 9) {
+				} else if (e.which === 9) {
 				e.preventDefault();
 			}
 		});
@@ -26,4 +26,17 @@ $(function() {
 			}
 		});
 	});
+});
+
+$(function() {
+	$("<pre />", {
+		"html":   '&lt;!DOCTYPE html>\n&lt;html>\n' +
+		$("html")
+		.html()
+		.replace(/[<>]/g, function(m) { return {'<':'&lt;','>':'&gt;'}[m]})
+		.replace(/((ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi,'<a href="$1">$1</a>') +
+		'\n&lt;/html>',
+		"class": "prettyprint"
+	}).appendTo("#source-code");
+	prettyPrint();
 });
