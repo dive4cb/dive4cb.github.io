@@ -11,6 +11,16 @@ body {
 body > ul > li {
     margin-top: 1em;
 }
+
+/*
+h1 {
+    font-size: 8vmax;
+}
+ul {
+    font-size: 2vmax;
+}
+*/
+
 a {
     color: #FF0;
 }
