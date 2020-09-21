@@ -1,0 +1,18 @@
+td, th, tr, table {
+    border: 2px black solid;
+}
+td, th {
+    padding: 6px;
+}
+
+i.check::after {
+    content: "";
+    display: block;
+    background: url("icon.jpg") no-repeat;
+/*
+    width: 20px;
+    height: 20px;
+*/
+/*    float: left;*/
+    margin: 0 6px 0 0;
+}
