@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hide Content Visually</title>
+		<script src="jquery.min.js"></script>
+		<script src="prettify.js"></script>
+		<script src="presentation-mechanics.js"></script>
+		<link rel="stylesheet" href="accessible-css-dialog.css">
+	</head>
+	<body>
+		<h1>Hide Content Visually</h1>
+        <h2>Clipped Method</h2>
+<code>.hide {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px) !important;
+-webkit-clip-path: inset(50%) !important;
+clip-path: inset(50%) !important;
+padding: 0 !important;
+border: 0 !important;
+height: 1px !important;
+width: 1px !important;
+white-space: nowrap !important;
+overflow: hidden !important;
+}</code>
+
+	</body>
+</html>
