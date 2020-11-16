@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User ID validation example.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mainALL.css">
+</head>
+
+<body>
+    <h1>User ID Acceptability Form</h1>
+    <label for="uidTest">Please enter a valid user ID.</label>
+    <br />
+
+    <input autocomplete="off" spellcheck="false" id="uidTest" type="text" aria-describedby="uidRules" aria-required="true" size="35" oninput="doCheck()" />
+    <span id="uidRules" class="displaynone">See list of checks and explanations below.</span>
+
+    <div id="valItemCompDiv" class="valItemClass" data-status="0"><img src="grey.jpg" alt="Not Validated, Username Is Valid. " /></div>
+    <p><span id="checkAll"> Does the username you typed in the field meet all the necessary conditions in the list below?</span></p>
+
+    <h2>User ID Conditions</h2>
+    <div aria-live="assertive" aria-atomic="false">
+    <ul id="conditions">
+        <li>
+            <div id="valItem1Div" class="valItemClass" data-status="0"><img src="grey.jpg" alt="Not Validated, Minimum Length. " title="Not Validated, Minimum Length. " /></div>
+            <span id="userCheck1"> Your user ID must be at least 5 characters</span>
+        </li>
+        <li>
+            <div id="valItem2Div" class="valItemClass" data-status="0"><img src="grey.jpg" alt="Not Validated, Maximum Length. " title="Not Validated, Maximum Length. " /></div>
+            <span id="userCheck2"> Your user ID cannot exceed 32 characters</span>
+        </li>
+        <li>
+            <div id="valItem3Div" class="valItemClass" data-status="0"><img src="grey.jpg" alt="Not Validated, At Least One Letter. " title="Not Validated, At Least One Letter. " /></div>
+            <span id="userCheck3"> Your user ID must contain at least one letter</span>
+        </li>
+        <li>
+            <div id="valItem4Div" class="valItemClass" data-status="0"><img src="grey.jpg" alt="Not Validated, Acceptable Special Characters. " title="Not Validated, Acceptable Special Characters. " /></div>
+            <span id="userCheck4"> Your user ID should allow only the following special characters  ^ _ -</span>
+        </li>
+        <li>
+            <div id="valItem5Div" class="valItemClass" data-status="0"><img src="grey.jpg" alt="Not Validated, No Spaces Allowed. " title="Not Validated, No Spaces Allowed. " /></div>
+            <span id="userCheck5"> Your user ID must not contain spaces</span>
+        </li>
+    </ul>
+            <div id="valItemCompDiv2" class="valItemClass clipped"><img src="grey.jpg" alt="Not Validated, Username Is Valid. " /></div>
+        </div>
+    <p>
+        <input id="saveUserID" type="button" onclick="submitSuccess()" value="Save User ID" disabled />
+        <input type="button" value="Refresh Page" onClick="window.location.reload()" />
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="doCheckJAWSALL.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input#uidTest").blur(function () {
+                $("#stateannounce2 p").empty();
+            });
+        });
+    </script>
+</body>
+
+</html>

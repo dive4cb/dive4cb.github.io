@@ -1,0 +1,26 @@
+
+        .clipped {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px 1px 1px 1px);
+        }
+
+        
+        .displaynone {
+            display: none;
+        }
+        
+        .valItemClass {
+            height: 13px;
+            width: 12px;
+            display: inline-block;
+        }
+        
+        
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 10px 0;
+        }
